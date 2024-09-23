@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import banniere from '../../../public/Image_source.png'
 
 type Props = {
+  banniere: HTMLImageElement
   text: string
 }
 
@@ -9,7 +9,7 @@ function Banner(props: Props) {
   return (
     <section className="banner">
       <div className="banner__txt">
-        <Image src={banniere} alt="bannière" />
+        <Image src={props.banniere} width="1000" height="1000" alt="bannière" />
       </div>
       <div className="banner__txt">
         <h1>{props.text}</h1>
