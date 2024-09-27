@@ -1,6 +1,6 @@
-import Banner from '../../components/Banner'
-import Card from '../../components/Card'
-import banniere from '../../../public/Image_source.png'
+import Banner from '../components/Banner'
+import Card from '../components/Card'
+import banniere from '../../public/Image_source.png'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {

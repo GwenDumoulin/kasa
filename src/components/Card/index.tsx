@@ -7,7 +7,7 @@ function Card() {
   return (
     <section className="bg-[#f6f6f6] rounded-[25px] grid gap-[40px] grid-cols-3 my-[50px] mx-[3%] p-[50px]">
       {data.map((appartement) => (
-        <Link key={appartement.id} href={`/logement/${appartement.id}`}>
+        <Link key={appartement.id} href={`/apartment/${appartement.id}`}>
           <article className="flex items-end relative rounded-[10px] h-[300px]">
             <Image
               className="w-full h-full rounded-[10px] object-cover"

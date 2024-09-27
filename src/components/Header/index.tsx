@@ -10,7 +10,9 @@ function Header() {
   const styleClassBase: string = 'text-redKasa text-2xl font-medium'
   return (
     <header className="flex flex-row justify-between items-center mt-[20px] mx-[3%]">
-      <Image src={logo} alt="logo_kasa" />
+      <Link href="/">
+        <Image src={logo} alt="logo_kasa" />
+      </Link>
       <nav className="flex gap-12">
         <Link
           className={
