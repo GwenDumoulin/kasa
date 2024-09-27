@@ -1,4 +1,5 @@
 import data from '../../../data/apartment.json'
+import ResponsiveCarousel from '../../../components/Carousel'
 import Image from 'next/image'
 
 function Apartment({ params }: { params: { id: string } }) {
@@ -11,6 +12,9 @@ function Apartment({ params }: { params: { id: string } }) {
   }
   return (
     <main>
+      <ResponsiveCarousel
+        logementId={appartementCourant.id}
+      ></ResponsiveCarousel>
       <p>Titre : {appartementCourant.title}</p>
       <p>Localisation : {appartementCourant.location}</p>
       <p>Tags : {appartementCourant.tags}</p>
@@ -24,6 +28,7 @@ function Apartment({ params }: { params: { id: string } }) {
       <p>Notation : {appartementCourant.rating} / 5</p>
       <p>Description : {appartementCourant.description}</p>
       <p>Equipements : {appartementCourant.equipments}</p>
+      <div>{appartementCourant.pictures}</div>
     </main>
   )
 }

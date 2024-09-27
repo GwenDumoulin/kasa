@@ -1,4 +1,3 @@
-import React from 'react'
 import data from '../../data/apartment.json'
 import Link from 'next/link'
 import Image from 'next/image'
