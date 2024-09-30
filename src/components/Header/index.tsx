@@ -7,13 +7,14 @@ import { usePathname } from 'next/navigation'
 
 function Header() {
   const pathname = usePathname()
-  const styleClassBase: string = 'text-redKasa text-2xl font-medium'
+  const styleClassBase: string =
+    'text-redKasa lg:text-[24px] text-[14px] font-medium lg:normal-case uppercase'
   return (
     <header className="flex flex-row justify-between items-center mt-[20px] mx-[3%]">
       <Link href="/">
-        <Image src={logo} alt="logo_kasa" />
+        <Image src={logo} alt="logo_kasa" className="md:w-[211px] w-[9rem]" />
       </Link>
-      <nav className="flex gap-12">
+      <nav className="flex gap-[20px] md:gap-[50px]">
         <Link
           className={
             pathname === '/' ? styleClassBase + ' underline' : styleClassBase

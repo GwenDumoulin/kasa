@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function Card() {
   return (
-    <section className="bg-[#f6f6f6] rounded-[25px] grid gap-[40px] grid-cols-3 my-[50px] mx-[3%] p-[50px]">
+    <section className="bg-[#f6f6f6] rounded-[25px] grid md:gap-[40px] gap-[20px] grid-cols-1 md:grid-cols-3 md:my-[50px] my-[20px] mx-[3%] md:p-[50px] p-[0]">
       {data.map((appartement) => (
         <Link key={appartement.id} href={`/apartment/${appartement.id}`}>
           <article className="flex items-end relative rounded-[10px] h-[300px]">

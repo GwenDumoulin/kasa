@@ -14,7 +14,7 @@ type Props = {
 
 export default function Accordion(props: Props) {
   return (
-    <CAccordion activeItemKey={2} className="w-[50%]">
+    <CAccordion activeItemKey={2} className="md:w-[50%] w-[100%]">
       <CAccordionItem itemKey={1}>
         <CAccordionHeader className="bg-[#ff6060] text-white font-medium rounded-[5px] p-[10px] text-[19px]">
           {props.title}

@@ -23,14 +23,14 @@ function ResponsiveCarousel(props: Props) {
         autoPlay={true}
       >
         {apartment?.pictures.map((picture) => (
-          <div key={picture} className="h-[500px]">
-            <div className="h-[500px]">
+          <div key={picture} className="md:h-[500px] h-[300px]">
+            <div className="md:h-[500px] h-[300px]">
               <Image
                 src={picture}
                 alt="slides"
                 height="500"
                 width="2000"
-                className="h-[500px] object-cover"
+                className="md:h-[500px] h-[300px] object-cover"
               />
             </div>
           </div>

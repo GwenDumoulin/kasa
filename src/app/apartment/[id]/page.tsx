@@ -13,11 +13,11 @@ function Apartment({ params }: { params: { id: string } }) {
     return 'error'
   }
   return (
-    <main className="min-h-[953px]">
+    <main className="lg:min-h-[953px]">
       <ResponsiveCarousel
         logementId={appartementCourant.id}
       ></ResponsiveCarousel>
-      <section className="mx-[100px] my-[30px]">
+      <section className=" md:mx-[100px] mx-[10px] my-[30px]">
         <div className="flex justify-between">
           <div>
             <h1 className="text-[#ff6060] text-[34px] font-medium mb-[10px]">
@@ -55,7 +55,7 @@ function Apartment({ params }: { params: { id: string } }) {
           </div>
         </div>
 
-        <div className="flex w-[100%] gap-[15px] mt-[20px]">
+        <div className="flex w-[100%] gap-[15px] mt-[20px] md:flex-row flex-col items-center md:items-start">
           <Accordion
             title="Description"
             content={appartementCourant.description}

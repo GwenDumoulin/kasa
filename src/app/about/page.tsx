@@ -5,7 +5,7 @@ import data from '../../data/about.json'
 
 function About() {
   return (
-    <main className="mx-[100px] my-0 min-h-[953px]">
+    <main className=" md:mx-[100px] mx-[10px] my-0 lg:min-h-[953px]">
       <Banner banniere={banniere2} text="A propos de Kasa" />
 
       <div className="flex jestify-center flex-col items-center gap-[30px] py-[50px]">
