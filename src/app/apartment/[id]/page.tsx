@@ -4,6 +4,12 @@ import Rating from '../../../components/Rating'
 import Accordion from '../../../components/Accordion'
 import Image from 'next/image'
 
+export async function generateStaticParams() {
+  return data.map((appartement) => ({
+    id: appartement.id.toString(),
+  }))
+}
+
 function Apartment({ params }: { params: { id: string } }) {
   const appartementCourant = data.find(
     (appartement) => appartement.id === params.id

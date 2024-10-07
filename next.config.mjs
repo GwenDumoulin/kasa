@@ -10,6 +10,11 @@ const nextConfig = {
       },
     ],
   },
+  images: {
+    unoptimized: true,
+  },
+  output: 'export',
+  basePath: '/kasa',
 }
 
 export default nextConfig
